@@ -1,0 +1,9 @@
+RewriteEngine on
+
+RewriteCond %{THE_REQUEST} ^(.+)\.php([#?][^\ ]*)?\ HTTP/
+
+RewriteRule ^index(.*)?$ index.php$1 [L,QSA]
+
+RewriteRule ^login_success(/)?$ login_success.php [L,QSA]
+
+RewriteRule ^contact(/)?$ contact.php [L,QSA]
